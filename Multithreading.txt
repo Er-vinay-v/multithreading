@@ -1,0 +1,57 @@
+﻿Multithreading Assignment solution
+
+
+1.What do you mean by multithreading?Why is it important?
+Ans: Multithreading is a concept of utilisation of cup time during program execution. Multithreading is defined as the process of executing multiple threads simultaneously is called multithreading.
+A thread is a lightweight sub-process, the smallest unit of processing. Multiprocessing and multithreading, both are used to achieve multitasking.
+It plays the most important role in programming because it is able to do multiple tasks simultaneously without any interruption and error.It is used generally for complex types of applications like video games,live streaming,media players.
+
+
+2.What are the benefits of using multithreading?
+Ans: Benefits of using multithreading like-
+→ it executes multiple threads simultaneously.
+→ Parallel program tasks execution.
+→ It's able to do multiple tasks in a single program.
+→ Improved throughput. Many concurrent compute operations and I/O requests within a                 single process.
+→ Superior application responsiveness etc.
+
+
+3.What is thread in java?
+Ans: A Thread is a very light-weighted process, or we can say the smallest part of the process that allows a program to operate more efficiently by running multiple tasks simultaneously.
+In order to perform complicated tasks in the background, we used the Thread concept in Java. All the tasks are executed without affecting the main program. In a program or process, all the threads have their own separate path for execution, so each thread of a process is independent.
+
+
+
+
+4.What are the two ways of implementing thread in Java?
+Ans: There are two ways to implementing thread in java –
+i.By implementing runnable interface
+ii.By extending Thread class
+ 
+5.What is the difference between thread and process ?
+Ans:There are many differences b/w thread and process →
+
+
+Thread:- 
+→Thread is a segment of a process or a lightweight process that is managed by the scheduler independently.
+→Threads are interdependent and share memory.
+→The operating system takes all the user-level threads as a single process.
+→Context switching between the threads is fast because they are very lightweight.
+
+
+Process:-
+→A process is an instance of a program that is being executed or processed.
+→A process is an instance of a program that is being executed or processed.
+→Each process is treated as a new process by the operating system.
+→Context switching between two processes takes much time as they are heavy compared to thread.
+
+
+6.How can we create a daemon thread ?
+Ans:We can create daemon threads in java using the thread class setDaemon(true). It is used to mark the current thread as daemon thread or user thread. isDaemon() method is generally used to check whether the current thread is daemon or not. If the thread is a daemon, it will return true otherwise it returns false.
+
+
+7.What are the wait() and Sleep() methods?
+Ans:The sleep() method is related to the Thread class that is used to stop the execution of the current Thread for a few seconds. The Sleep () method takes the sleeping time in milliseconds. The monitor's ownership is not lost when we use the Sleep () method and start the execution again from where it stops.
+
+
+The Wait() method is related to the Object class. The Wait() method is responsible for sending the calling thread into the waiting state. The Thread remains in the waiting state until another thread doesn't invoke the notify() method for that object. The Thread resumes the execution after obtaining the ownership of the monitor.
